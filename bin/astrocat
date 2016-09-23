@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+var process = require('process');
+var path = require('path');
+
+var astrocat = require('..');
+
+function load_config() {
+    var cwd = process.cwd();
+    var cfgFile = path.resolve(cwd, '.config')
+    console.log(cfgFile);
+    return require(cfgFile);
+}
+
+var bot = new astrocat(load_config());
+
+bot.start();

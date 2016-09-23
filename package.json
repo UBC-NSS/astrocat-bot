@@ -1,0 +1,41 @@
+{
+    "name": "astrocat",
+    "version": "0.1.0alpha",
+    "description": "A slack bot",
+    "author": "Jean-Sebastien <jslegare@cs.ubc.ca>",
+    "contributors": [
+	{
+	    "name": "Jean-Sebastien Legare",
+	    "email": "jslegare@cs.ubc.ca"
+	}
+    ],
+    "bin": {
+	"module-name": "./bin/astrocat"
+    },
+    
+    "scripts": {},
+    "main": "lib/main.js",
+    "repository": {
+	"type": "git",
+	"url": "https://github.com/UBC-NSS/astrocat-bot"
+    },
+    "bugs": {
+	"url": "https://github.com/UBC-NSS/astrocat-bot/issues"
+    },
+    
+    "keywords": [],
+    
+    "dependencies": {
+	"botkit": "0.2.2",
+	"winston": "*"
+    },
+    
+    "devDependencies": {},
+
+    "preferGlobal": true,
+    "private": true,
+
+    "subdomain": "astrocat",
+    "analyze": true,
+    "license": "GPL"
+}
